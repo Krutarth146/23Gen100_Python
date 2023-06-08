@@ -62,6 +62,10 @@ class Bank:
     def increase_ROI(cls):
         cls.ROI += 2
 
+    @staticmethod
+    def locker():
+        pass
+
     def calculate_Interest(self):
         self.balance += (self.balance * Bank.ROI) / 100
         print("Interst Calculated!")
